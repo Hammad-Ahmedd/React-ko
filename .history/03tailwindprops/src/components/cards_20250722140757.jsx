@@ -1,6 +1,7 @@
 import React from 'react'
 
-function Card({ username = "If any think not there it will show this text", whatdo = "If any think not there it will show this text" }) {
+function Card(props, { username = "If any think not there it will show this text", whatdo = "If any think not there it will show this text" }) {
+    console.log(props)
     return (
         <>
             <div className='card-wrapper' >

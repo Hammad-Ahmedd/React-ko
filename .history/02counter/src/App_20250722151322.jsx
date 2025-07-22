@@ -5,6 +5,7 @@ import './App.css'
 
 function App() {
   let [counter, setCounter] = useState(0)
+
   function incrementNumber() {
     setCounter(counter + 1);
   }

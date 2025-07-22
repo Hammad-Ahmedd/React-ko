@@ -5,8 +5,13 @@ import './App.css'
 
 function App() {
   let [counter, setCounter] = useState(0)
+
   function incrementNumber() {
     setCounter(counter + 1);
+    setCounter(counter + 1);
+    setCounter(counter + 1);
+    setCounter(counter + 1);
+
   }
   function decrementNumber() {
     if (counter > 0) {
@@ -22,4 +27,5 @@ function App() {
     </>
   )
 }
+
 export default App
