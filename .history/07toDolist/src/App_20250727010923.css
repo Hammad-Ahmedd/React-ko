@@ -1,0 +1,9 @@
+.input-wrappers{
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  border: 1px solid black;
+  border-radius:15px;
+}
