@@ -1,0 +1,90 @@
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
+
+function App() {
+  const [emailinput, setemailinput] = useState("")
+  const [nameinput, setnameinput] = useState("")
+
+  const [step1, setstep1] = useState(false)
+  const [step2, setstep2] = useState(true)
+  const [step3, setstep3] = useState(true)
+
+
+  function emailvalid() {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailinput);
+  }
+
+  function onClickStep1() {
+    if (nameinput.trim() !== "" && emailvalid()) {
+      setstep1(true)
+      setstep2(false)
+    } else {
+      alert("Please Fill the fields")
+    }
+  }
+  function gobacktostep1(){
+      setstep1(false)
+      setstep2(false)
+  }
+
+  return (
+    <>
+      <div className="stepform">
+        <form onSubmit={(e) => e.preventDefault()}>
+          {/* Step 1 */}
+          <div id="step-1" style={{ display: step1 ? "none" : "block" }}>
+            <h1 className="step-title">Step 1</h1>
+            <div className="input-wrapper">
+              <input
+                type="text"
+                name="Full Name"
+                placeholder="Full Name"
+                value={nameinput}
+                onChange={(e) => setnameinput(e.target.value)}
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                value={emailinput}
+                onChange={(e) => setemailinput(e.target.value)}
+              />
+            </div>
+            <div className="btn-wrapper">
+              <button className="btn btn-next" onClick={onClickStep1}>Next</button>
+            </div>
+          </div>
+
+          {/* Step 2 */}
+          <div id="step-2" style={{ display: step2 ? "none" : "block" }}>
+            <h1 className="step-title">Step 2</h1>
+            <div className="checkbox-wrapper">
+              <div className="checkbox-column">
+                <label><input type="checkbox" /> Option 1</label>
+                <label><input type="checkbox" /> Option 2</label>
+                <label><input type="checkbox" /> Option 3</label>
+                <label><input type="checkbox" /> Option 4</label>
+                <label><input type="checkbox" /> Option 5</label>
+              </div>
+              <div className="checkbox-column">
+                <label><input type="checkbox" /> Option 6</label>
+                <label><input type="checkbox" /> Option 7</label>
+                <label><input type="checkbox" /> Option 8</label>
+                <label><input type="checkbox" /> Option 9</label>
+                <label><input type="checkbox" /> Option 10</label>
+              </div>
+            </div>
+            <div className="btn-wrapper space-between">
+              <button className="btn btn-back" onClick={}>Back</button>
+              <button className="btn btn-next">Next</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </>
+  )
+}
+
+export default App
