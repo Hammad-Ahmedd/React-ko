@@ -1,0 +1,30 @@
+.tictactoe-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+}
+
+.tictactoe-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+button {
+  width: 80px;
+  height: 80px;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.win-para {
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  
+}

@@ -1,0 +1,15 @@
+.tictactoe-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.tictactoe-grid {
+  display: grid;
+  
+}
+
+button {
+  padding: 1.3rem 1.7rem;
+}
