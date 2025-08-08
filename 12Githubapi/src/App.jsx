@@ -11,10 +11,10 @@ function App() {
 
   function finfclick(e) {
     e.preventDefault()
-    if (!datanew.trim()) return
+
     if (datanew.trim() !== "") {
       setshow(true)
-    } else {
+    } else if (!datanew.trim()) {
       setshow(false)
     }
   }
