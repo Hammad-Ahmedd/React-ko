@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+.card {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.251);
+}
+
+.card-wrapper {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    position:relative;
+    border-radius: 10px;
+    gap: 1rem;
+    width: 50%;
+}
+.cross{
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotateY(45);
+}

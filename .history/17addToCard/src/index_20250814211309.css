@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+.card {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.251);
+}
+
+.card-wrapper {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap: 1rem;
+}

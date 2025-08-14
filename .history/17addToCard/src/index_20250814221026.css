@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+.card {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.card-wrapper {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    position: relative;
+    border-radius: 10px;
+    gap: 1rem;
+    width: 90%;
+    max-width: 600px; /* Prevents it from being too wide on desktops */
+    max-height: 90vh; /* Prevents overflow on small screens */
+    overflow-y: auto;
+}
+
+.cross {
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+    transform: rotate(-45deg);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Responsive tweaks */
+@media (min-width: 768px) {
+    .card-wrapper {
+        padding: 4rem 2rem;
+        width: 70%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .card-wrapper {
+        width: 50%;
+    }
+}

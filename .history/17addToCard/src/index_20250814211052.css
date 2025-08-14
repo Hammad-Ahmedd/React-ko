@@ -1,0 +1,4 @@
+@import "tailwindcss";
+.card{
+    height: 100vh;
+}
