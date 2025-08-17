@@ -1,0 +1,5 @@
+import { createReducer, createSlice } from "@reduxjs/toolkit";
+
+export const ProductSlice=createSlice({
+
+})

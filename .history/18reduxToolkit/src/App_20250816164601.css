@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+input {
+    border: 1px solid white;
+    color: black;
+
+}
+
+button {
+    color: black;
+    background: white;
+    padding: 0.5rem 1rem;
+
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    background: black;
+    color: white;
+    height: 100vh;
+}

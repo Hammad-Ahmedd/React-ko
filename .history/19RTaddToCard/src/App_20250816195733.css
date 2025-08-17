@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+.containr-large{
+    max-width: 80rem;
+    margin: 0,au;
+}

@@ -1,0 +1,5 @@
+import { configureStore } from "@reduxjs/toolkit";
+import { nameReducer } from "../features/NameSlice";
+export const store = configureStore({
+    reducer: nameReducer,
+})
